@@ -10,6 +10,11 @@ Fullt navn: Nonni Gravdahl
 
 Kort beskrivelse av applikasjon (5-10 setninger):
 
-Applikasjonen som ble laget registrerer kjøp av kinobilletter,
-vha. table-element i html opprettes inputbokser. 
+Applikasjonen viser kjøp av kinobilletter. 
+Ved hjelp av table-element i html opprettes inputbokser som samler inn
+informasjon om valgt film, antall billette, fornavn etc. 
+Det ble opprettet en knapp(kjøp billett) som brukeren kan trykke for å bestille billettene.
+Informasjonen som brukeren har angitt i skjemaet, blir derette lagre
+vha. Javascript. 
+
 
