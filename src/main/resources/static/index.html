@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling av kinobilletter</title>
+    <script type="application/javascript"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+
+<div>
+    <table>
+        <label for="film">Velg film: </label>
+        <select id="film" onchange="select()">
+            <option value="Ant-Man">Ant-Man</option>
+            <option value="Avatar 2">Avatar 2</option>
+            <option value="Black Panther">Black Panther</option>
+        </select>
+        <div id="film-error"></div>
+        <div>
+            <tr><td>Antall</td><td><input type="number" id="antall"/></td></tr>
+            <div id="antall-error"></div>
+            <tr><td>Fornavn</td><td><input type="text" id="fornavn"/></td></tr>
+            <div id="fornavn-error"></div>
+            <tr><td>Etternavn</td><td><input type="text" id="etternavn"/></td></tr>
+            <div id="etternavn-error"></div>
+            <tr><td>Telefonnr</td><td><input type="text" id="telefonnr"/></td></tr>
+            <div id="telefon-error"></div>
+            <tr><td>Epost</td><td><input type="text" id="epost"/></td></tr>
+            <div id="epost-error"></div>
+            <tr><td><button onclick="kjopBillett()">Kjøp billett</button></td></tr>
+        </div>
+    </table>
+
+    <div>
+        <h2>Alle billetter</h2>
+    </div>
+    <div id="kino"></div>
+
+    <br>
+    <button onclick="slettBillett()">Slett Billett</button>
+</div>
+</body>
+</html>
