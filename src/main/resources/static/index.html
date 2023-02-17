@@ -11,6 +11,7 @@
 
 <div>
     <table>
+        <!-- Her kan det velges filmer-->
         <label for="film">Velg film: </label>
         <select id="film" onchange="select()">
             <option value="Ant-Man">Ant-Man</option>
@@ -18,7 +19,8 @@
             <option value="Black Panther">Black Panther</option>
         </select>
         <div id="film-error"></div>
-        <div>
+
+            <!-- Vha. <tr> tag lages det like store rader-->
             <tr><td>Antall</td><td><input type="number" id="antall"/></td></tr>
             <div id="antall-error"></div>
             <tr><td>Fornavn</td><td><input type="text" id="fornavn"/></td></tr>
@@ -30,7 +32,7 @@
             <tr><td>Epost</td><td><input type="text" id="epost"/></td></tr>
             <div id="epost-error"></div>
             <tr><td><button onclick="kjopBillett()">Kjøp billett</button></td></tr>
-        </div>
+
     </table>
 
     <div>

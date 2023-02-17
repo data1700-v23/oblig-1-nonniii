@@ -4,6 +4,7 @@ function select(){
     console.log(option)
 }
 function visKino(){
+    //Skriver ut det som står i inputbokser
     let ut ="<table><tr>" + "<th>Film</th><th>Antall</th><th>Fornavn</th><th>Etternavn</th><th>Telefonnr</th><th>Epost</th>" +
         "</tr>";
     for (let p of kino) {
@@ -32,6 +33,7 @@ function kjopBillett(){
         epost : epost,
     };
     kino.push(enBillett);
+    //Nullstiller inputboksene
     document.getElementById("film").value="";
     document.getElementById("antall").value="";
     document.getElementById("fornavn").value="";
