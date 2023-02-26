@@ -34,6 +34,19 @@ function visKino() {
 }
 
 //Input-validering som sjekker at alle inputfeltene inneholder noe.
+
+function validerFilm() {
+    const film = document.getElementById("film").value;
+    if (film === "") {
+        document.getElementById("film-error").innerHTML =
+            "Vennligst velg en film";
+        return false;
+    } else {
+        document.getElementById("film-error").innerHTML = "";
+        return true;
+    }
+}
+
 function validerAntall(antall) {
     if (antall === "") {
         document.getElementById("antall-error").innerHTML =
@@ -54,7 +67,6 @@ function validerNavn(navn, id) {
         return true;
     }
 }
-
 function validerTelefon(telefon) {
     if (telefon === "") {
         document.getElementById("telefon-error").innerHTML =
@@ -90,13 +102,15 @@ function kjopBillett() {
     const validerEtternavnOk = validerNavn(etternavn, "etternavn-error");
     const validerTelefonOk = validerTelefon(telefonnr);
     const validerEpostOk = validerEpost(epost);
+    const validerFilmOk = validerFilm();
 
     if (
         validerAntallOk &&
         validerFornavnOk &&
         validerEtternavnOk &&
         validerTelefonOk &&
-        validerEpostOk
+        validerEpostOk &&
+        validerFilmOk
     ) {
         const enBillett = {
             film: film,
